@@ -28,11 +28,10 @@ class UsersService {
       return {
         id: res.data.id,
         name: res.data.name,
-        birth: moment(res.data.birth)
-          .format("MMM Do YYYY"),
+        birth: moment(res.data.birth).format("MMM Do YYYY"),
         age: moment().diff(res.data.birth, "years", false),
         createdAt: moment(res.data.createdAt)
-          .subtract(3, "hours")
+          .add(2, "hours")
           .format("MMMM Do YYYY, h:mm:ss A"),
       };
     });
