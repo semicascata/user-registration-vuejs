@@ -29,7 +29,6 @@ class UsersService {
         id: res.data.id,
         name: res.data.name,
         birth: moment(res.data.birth)
-          .add(1, "days")
           .format("MMM Do YYYY"),
         age: moment().diff(res.data.birth, "years", false),
         createdAt: moment(res.data.createdAt)
