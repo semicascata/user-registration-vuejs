@@ -12,11 +12,11 @@
       </button>
     </div>
 
-    <Loading v-if="loading" />
-
     <div v-if="users.length == 0" class="warning">
       <h2>No registered users today...</h2>
     </div>
+
+    <Loading v-if="loading" />
 
     <ul v-else class="list-group" :key="user.id" v-for="user in users">
       <li
