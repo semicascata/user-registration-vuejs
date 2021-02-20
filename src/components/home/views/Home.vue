@@ -2,7 +2,7 @@
   <div class="container">
     <h1>User Registration Application</h1>
     <h4><i>Raul de O. Duarte - FullStack Developer Jr</i></h4>
-    <p>
+    <p class="home-text">
       Aplicação construída com intuito de registro e visualização de usuários,
       incluindo dados como nome e data de nascimento. <br />
       O site foi desenvolvido utilizando NestJS (NodeJS Framework) na construção

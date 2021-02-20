@@ -12,7 +12,7 @@ body {
 .container {
   margin: 20px auto;
 
-  p {
+  .home-text {
     margin: 60px auto;
     font-family: $font-secondary;
     text-align: center;
@@ -84,6 +84,11 @@ nav {
 
 .card-title {
   font-family: $font-primary;
+}
+
+.card-text {
+  text-align: left;
+  font-family: $font-secondary;
 }
 
 .card .btn {
