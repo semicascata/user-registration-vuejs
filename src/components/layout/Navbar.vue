@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
     <div class="navbar-brand">
-      <i class="fas fa-users"></i> User Registration | Job Challange
+      <i class="fas fa-users"></i> Job Challange - DG Solutions
     </div>
     <!-- toggle button -->
     <button

@@ -1,8 +1,7 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Bree+Serif|Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Playfair+Display&display=swap");
 $font-primary: "Bree Serif", serif;
 $font-secondary: "Playfair Display", serif;
-$font-tertiary: "Amatic SC", cursive;
 $color-primary: #f4f4f6;
 $color-secondary: #3f3f44;
 
@@ -10,14 +9,198 @@ body {
   background-color: $color-primary;
 }
 
+.container {
+  margin: 20px auto;
+
+  p {
+    margin: 60px auto;
+    font-family: $font-secondary;
+    text-align: center;
+  }
+}
+
+.img-container {
+  text-align: center;
+}
+
+.home-img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: $font-primary;
+  text-align: center;
 }
 
 // navbar
 nav {
   font-family: $font-primary;
+}
+
+// users list
+#users-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.warning {
+  margin: 30px;
+}
+
+.list-group-item {
+  margin: 6px auto;
+  width: 400px;
+  font-family: $font-secondary;
+  text-align: center;
+  box-shadow: 5px 5px 15px #363636;
+}
+
+.btn {
+  margin: 15px auto 5px;
+}
+
+// user profile
+#card-container {
+  margin: 10px auto;
+}
+
+.card {
+  margin: 20px auto;
+  width: 300px;
+  box-shadow: 10px 10px 20px #363636;
+  border-radius: 15px;
+}
+
+.card-img-top {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.card-title {
+  font-family: $font-primary;
+}
+
+.card .btn {
+  font-family: $font-primary;
+  margin: 5px auto;
+}
+
+.container .row {
+  font-family: $font-primary;
+}
+
+// new user modal
+.modal {
+  margin: 0 auto;
+  font-family: $font-primary;
+}
+
+.modal .col-md {
+  margin: 10px auto;
+}
+
+// alert
+.alert {
+  font-family: $font-secondary;
+  margin: 10px auto;
+  width: 450px;
+  text-align: center;
+}
+
+// loading
+.spinner-container {
+  text-align: center;
+  margin: 100px auto;
+  width: 500px;
+
+  .spinner-border {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+// contact
+.contact {
+  width: auto;
+  margin: 20px auto 100px;
+  text-align: center;
+  color: #363636;
+
+  .me {
+    margin-bottom: 130px;
+    font-family: $font-primary;
+
+    h4 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      margin-bottom: 2px;
+      font-size: 1.6rem;
+    }
+  }
+
+  .cardMe {
+    font-family: $font-primary;
+    font-size: 1rem;
+    text-align: center;
+    margin: 18px auto 0;
+    width: 221px;
+  }
+
+  p {
+    font-family: $font-primary;
+    margin: 2px auto 0;
+
+    a {
+      text-align: left;
+    }
+  }
+}
+
+// typeWriter machine effect
+.twContainer {
+  margin: 80px auto 20px;
+  display: flex;
+  justify-content: center;
+}
+.twEffect .twText {
+  font-family: $font-primary;
+  font-size: 2.5rem;
+  overflow: hidden;
+  border-right: 0.12em solid #363636;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.3em;
+  animation: typing 2s steps(11, end),
+    // 11 = number of letters
+      blink-caret 0.3s step-end infinite;
+}
+
+// typing effect
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+// typewriter cursor effect
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  35% {
+    border-color: #363636;
+  }
 }
