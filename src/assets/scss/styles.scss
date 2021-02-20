@@ -55,9 +55,14 @@ nav {
 .list-group-item {
   margin: 6px auto;
   width: 400px;
+  line-height: 5px;
   font-family: $font-secondary;
   text-align: center;
   box-shadow: 5px 5px 15px #363636;
+
+  .badge {
+    vertical-align: center;
+  }
 }
 
 .btn {
